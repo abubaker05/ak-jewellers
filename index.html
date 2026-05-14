@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0A0A0A">
     
+    <!-- SEO Meta Tags for Google Ranking -->
     <title>AK JEWELLERS | Best Gold & Silver Jewellery in Secunderabad | Serving since 25 Years</title>
     <meta name="description" content="AK Jewellers Secunderabad: Exquisite gold and silver jewellery for over 25 years. Located at Darshan Complex, Mahankali Street. Trusted necklaces, bangles, and kadas.">
     <meta name="keywords" content="AK Jewellers, Jewellery Secunderabad, Gold Necklace Secunderabad, Silver Bangles Mahankali Street, AK Jewellers Darshan Complex, Jewellery Shop Secunderabad">
@@ -50,9 +51,6 @@
             transform: rotate(45deg);
             transition: 0.5s;
         }
-        .card-shimmer:hover::after {
-            left: 100%;
-        }
         .filter-btn {
             border: 1px solid rgba(255,255,255,0.2);
             padding: 0.5rem 1.25rem;
@@ -86,10 +84,6 @@
             justify-content: center;
             box-shadow: 0 4px 20px rgba(0,0,0,0.5);
             z-index: 1000;
-            transition: transform 0.3s;
-        }
-        .whatsapp-float:hover {
-            transform: scale(1.1);
         }
         .business-hours-card {
             background: #111111;
@@ -122,49 +116,40 @@
         <div class="relative text-center px-4">
             <h2 class="text-4xl md:text-7xl font-luxury mb-4 leading-tight">Crafting Memories <br><span class="text-[#D4AF37]">In Every Gram</span></h2>
             <p class="max-w-xl mx-auto text-gray-400 text-sm md:text-base leading-relaxed mb-10 tracking-wide">
-                From traditional Secunderabad heritage to contemporary elegance. Explore our curated collections of Gold and Silver.
+                Premium Men's Kada Collection. Custom-crafted in Gold and Silver to your exact specifications.
             </p>
-            <a href="#catalogue" class="inline-block px-12 py-4 gold-bg text-black font-bold uppercase text-xs tracking-[0.2em] rounded-sm hover:brightness-110 transition shadow-lg">Browse Catalogue</a>
+            <a href="#catalogue" class="inline-block px-12 py-4 gold-bg text-black font-bold uppercase text-xs tracking-[0.2em] rounded-sm hover:brightness-110 transition shadow-lg">Browse Collection</a>
         </div>
     </section>
 
     <section id="catalogue" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div>
-                <h2 class="text-3xl font-luxury gold-gradient mb-2 uppercase tracking-wider">Our Collections</h2>
+                <h2 class="text-3xl font-luxury gold-gradient mb-2 uppercase tracking-wider">Men's Kada Collection</h2>
                 <div class="w-20 h-1 gold-bg"></div>
             </div>
-            
             <div class="flex flex-wrap gap-3">
                 <button id="btn-all" onclick="filterItems('all')" class="filter-btn active">All</button>
                 <button id="btn-Gold" onclick="filterItems('Gold')" class="filter-btn">Gold</button>
                 <button id="btn-Silver" onclick="filterItems('Silver')" class="filter-btn">Silver</button>
-                <button id="btn-Necklace" onclick="filterCategory('Necklace')" class="filter-btn">Necklaces</button>
-                <button id="btn-Bangles" onclick="filterCategory('Bangles')" class="filter-btn">Bangles/Kada</button>
             </div>
         </div>
-
-        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 min-h-[500px]">
-            </div>
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 min-h-[500px]"></div>
     </section>
 
     <section id="about-section" class="bg-[#050505] py-24 px-6 border-y border-white/5">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 items-center">
             <div>
                 <h2 class="text-3xl font-luxury gold-gradient mb-8 uppercase tracking-widest">Our Legacy</h2>
-                <p class="text-gray-300 mb-6 leading-relaxed text-lg italic">"Crafting elegance since 2001."</p>
                 <p class="text-gray-400 mb-8 leading-relaxed">
-                    AK JEWELLERS has stood as a hallmark of purity and craftsmanship in Secunderabad for over **25 years**. Our journey began with a commitment to providing high-quality 22K/18K Gold and fine Silver jewellery. 
-                    <br><br>
-                    Every piece in our catalogue is curated or custom-made to reflect your personal story. We believe that jewellery is not just an ornament, but a precious memory to be passed down through generations.
+                    AK JEWELLERS has stood as a hallmark of purity and craftsmanship in Secunderabad for over **25 years**. We specialize in bespoke jewellery tailored to your requirements.
                 </p>
-                
                 <div id="contact-info" class="space-y-6">
                     <div class="flex items-start gap-5">
                         <div class="text-[#D4AF37] text-2xl">📍</div>
                         <div>
                             <p class="font-bold text-white tracking-wide">Visit Our Showroom</p>
-                            <p class="text-sm text-gray-500 mt-1">First Floor, Darshan Complex,<br>Mahankali Street, Secunderabad.</p>
+                            <p class="text-sm text-gray-500 mt-1">First Floor, Darshan Complex, Mahankali Street, Secunderabad.</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-5">
@@ -175,128 +160,73 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="business-hours-card">
                     <h4 class="text-[#D4AF37] font-bold uppercase tracking-widest mb-6 text-xs">Business Hours</h4>
-                    <div class="space-y-4 text-sm">
-                        <div class="flex justify-between border-b border-white/5 pb-2">
-                            <span>Monday – Saturday</span>
-                            <span class="text-gray-400">10:00 AM – 9:00 PM</span>
-                        </div>
-                        <div class="flex justify-between border-b border-white/5 pb-2">
-                            <span>Sunday</span>
-                            <span class="text-gray-400">11:00 AM – 7:00 PM</span>
-                        </div>
+                    <div class="space-y-4 text-sm text-gray-300">
+                        <div class="flex justify-between border-b border-white/5 pb-2"><span>Monday – Saturday</span><span>10:00 AM – 9:00 PM</span></div>
+                        <div class="flex justify-between border-b border-white/5 pb-2"><span>Sunday</span><span>11:00 AM – 7:00 PM</span></div>
                     </div>
-                    <p class="text-[10px] text-gray-600 mt-4 italic">* Hours may vary on public holidays</p>
                 </div>
             </div>
-            
             <div class="h-[450px] bg-zinc-900 rounded-lg overflow-hidden relative shadow-2xl border border-white/10">
-                <iframe 
-                    width="100%" 
-                    height="100%" 
-                    frameborder="0" 
-                    style="border:0; filter: invert(90%) hue-rotate(180deg) grayscale(100%);"
-                    src="https://maps.google.com/maps?q=Mahankali%20Street%20Secunderabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    allowfullscreen>
-                </iframe>
+                <iframe width="100%" height="100%" frameborder="0" style="border:0; filter: invert(90%) hue-rotate(180deg) grayscale(100%);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.6346258014565!2d78.5003323!3d17.4389086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9a367683935b%3A0x673418579d1c7f99!2sDarshan%20Complex!5e0!3m2!1sen!2sin!4v1700000000000" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <footer class="py-16 px-6 text-center border-t border-white/5 bg-black">
+    <footer class="py-16 px-6 text-center border-t border-white/5 bg-black text-xs text-gray-500">
         <h3 class="font-luxury text-2xl gold-gradient mb-2 tracking-[0.3em]">AK JEWELLERS</h3>
-        <p class="text-[10px] text-gray-600 uppercase tracking-[0.5em] mb-12">Secunderabad • Established 25 Years</p>
-        <div class="text-xs text-gray-500">
-            <p>© 2026 AK Jewellers. All rights reserved.</p>
-            <p class="mt-4 tracking-widest uppercase text-[10px] opacity-60">Architected by <span class="text-[#D4AF37]">Mohammed Abu Baker</span></p>
-        </div>
+        <p>© 2026 AK Jewellers. Architected by <span class="text-[#D4AF37]">Mohammed Abu Baker</span></p>
     </footer>
 
-    <a href="https://wa.me/917032339991" id="wa-general" class="whatsapp-float">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>
-    </a>
+    <a href="https://wa.me/917032339991" class="whatsapp-float flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></a>
 
     <script>
-        const BUSINESS_PHONE = "917032339991"; 
+        const BUSINESS_PHONE = "917032339991";
         
         const products = [
-            { id: 1, name: "Temple Heritage Necklace", type: "Gold", category: "Necklace", weight: "45.50g", img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=1974&auto=format&fit=crop" },
-            { id: 2, name: "Designer Bridal Bangles", type: "Gold", category: "Bangles", weight: "32.10g", img: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=2070&auto=format&fit=crop" },
-            { id: 3, name: "Filigree Silver Kada", type: "Silver", category: "Bangles", weight: "55.00g", img: "https://images.unsplash.com/photo-1535633302704-c02fbcaf8c2a?q=80&w=2070&auto=format&fit=crop" },
-            { id: 4, name: "Peacock Jhumka Earrings", type: "Gold", category: "Earring", weight: "12.40g", img: "https://images.unsplash.com/photo-1630019019621-0437435862d5?q=80&w=1974&auto=format&fit=crop" },
-            { id: 5, name: "Antique Locket Pendant", type: "Gold", category: "Locket", weight: "8.20g", img: "https://images.unsplash.com/photo-1598560917505-59a3ad559071?q=80&w=1974&auto=format&fit=crop" },
-            { id: 6, name: "Silver Choker Set", type: "Silver", category: "Necklace", weight: "110g", img: "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?q=80&w=1924&auto=format&fit=crop" }
+            { id: 1, name: "Textured Diamond-Cut Kada", type: "Silver", weight: "25g - 40g", img: "image_840c5f.png", desc: "Sleek silver kada with high-polish diamond-cut textures. Fully customizable size." },
+            { id: 2, name: "Geometric Pattern Silver Kada", type: "Silver", weight: "30g - 50g", img: "image_8408f8.png", desc: "Modern geometric engraving on solid sterling silver. Available in custom thickness." },
+            { id: 3, name: "Classic Beveled Silver Kada", type: "Silver", weight: "40g - 70g", img: "image_84053d.png", desc: "Timeless beveled edge design. High-durability build for daily wear." },
+            { id: 4, name: "Linear Engraved Gold Kada", type: "Gold", weight: "15g - 35g", img: "image_8401b2.png", desc: "Fine 22K gold with intricate linear engravings. Order in your preferred weight." },
+            { id: 5, name: "High-Polish Tapered Gold Kada", type: "Gold", weight: "20g - 45g", img: "image_840154.png", desc: "Sophisticated tapered design with a mirror finish. Stunning professional look." },
+            { id: 6, name: "Bold Wide-Band Gold Kada", type: "Gold", weight: "35g - 80g", img: "image_83ab5e.png", desc: "Heavy wide-band solid gold kada. Maximum presence and premium feel." },
+            { id: 7, name: "Grid-Patterned Gold Kada", type: "Gold", weight: "25g - 50g", img: "image_83aaa8.png", desc: "Unique grid textured gold design. Modern elegance for the contemporary man." }
         ];
 
         function displayProducts(filteredList) {
             const grid = document.getElementById('product-grid');
-            if (!grid) return;
-            grid.innerHTML = '';
-            
-            if (filteredList.length === 0) {
-                grid.innerHTML = '<div class="col-span-full text-center py-24 text-gray-500 font-luxury tracking-widest">No matching items found.</div>';
-                return;
-            }
-
-            filteredList.forEach(product => {
-                const card = document.createElement('div');
-                card.className = "bg-zinc-900 border border-white/10 rounded-lg overflow-hidden card-shimmer group transition-all duration-500 hover:shadow-[0_0_30px_rgba(212,175,55,0.15)] flex flex-col";
-                card.innerHTML = `
-                    <div class="h-72 overflow-hidden bg-black flex items-center justify-center">
-                        <img src="${product.img}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000 opacity-80 group-hover:opacity-100" onerror="this.src='https://via.placeholder.com/400x400?text=Jewellery+Item'">
+            grid.innerHTML = filteredList.map(p => `
+                <div class="bg-zinc-900 border border-white/10 rounded-lg overflow-hidden flex flex-col">
+                    <div class="h-72 bg-black flex items-center justify-center p-4">
+                        <img src="${p.img}" alt="${p.name}" class="max-h-full object-contain">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
-                        <div class="flex justify-between items-start mb-3">
-                            <span class="text-[10px] uppercase tracking-[0.3em] text-[#D4AF37] font-bold">${product.type} • ${product.category}</span>
-                            <span class="text-xs text-gray-500 italic font-medium tracking-wide">${product.weight}</span>
-                        </div>
-                        <h3 class="text-xl font-luxury mb-4 text-white group-hover:text-[#D4AF37] transition-colors">${product.name}</h3>
+                        <span class="text-[10px] uppercase tracking-widest text-[#D4AF37] font-bold mb-2">${p.type} • Est. ${p.weight}</span>
+                        <h3 class="text-xl font-luxury text-white mb-3">${p.name}</h3>
+                        <p class="text-xs text-gray-400 leading-relaxed mb-6">${p.desc}</p>
                         <div class="mt-auto">
-                            <p class="text-xs text-gray-400 uppercase tracking-widest mb-6">Live Rates Apply</p>
-                            <button onclick="orderWhatsApp('${product.name}', '${product.weight}')" 
-                                    class="w-full py-4 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition-all duration-300 uppercase text-[11px] tracking-[0.2em] font-bold rounded-sm">
-                                Get Live Price
-                            </button>
+                            <p class="text-[10px] text-gray-500 uppercase italic mb-4">Custom size and weight available</p>
+                            <button onclick="orderWhatsApp('${p.name}')" class="w-full py-4 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black transition uppercase text-[11px] font-bold">Inquire for Custom Order</button>
                         </div>
                     </div>
-                `;
-                grid.appendChild(card);
-            });
+                </div>
+            `).join('');
         }
 
-        function orderWhatsApp(name, weight) {
-            const message = `Hello AK Jewellers, I saw this on your website: *Product:* ${name}, *Weight:* ${weight}. Please share today's live rate.`;
-            const url = `https://wa.me/${BUSINESS_PHONE}?text=${encodeURIComponent(message)}`;
-            
-            // Fixed button for mobile browsers
-            if (/Android|iPhone/i.test(navigator.userAgent)) {
-                window.location.href = url;
-            } else {
-                window.open(url, '_blank');
-            }
+        function orderWhatsApp(name) {
+            const msg = encodeURIComponent(`Hello AK Jewellers, I'm interested in the ${name}. I'd like to discuss a custom order for my size and required weight.`);
+            window.location.href = `https://wa.me/${BUSINESS_PHONE}?text=${msg}`;
         }
 
         function filterItems(type) {
-            updateActiveBtn('btn-' + type);
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('btn-' + type).classList.add('active');
             displayProducts(type === 'all' ? products : products.filter(p => p.type === type));
         }
 
-        function filterCategory(cat) {
-            updateActiveBtn('btn-' + cat);
-            displayProducts(products.filter(p => p.category === cat));
-        }
-
-        function updateActiveBtn(id) {
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-            const activeBtn = document.getElementById(id);
-            if (activeBtn) activeBtn.classList.add('active');
-        }
-
-        window.addEventListener('load', () => displayProducts(products));
+        window.onload = () => displayProducts(products);
     </script>
 </body>
 </html>
